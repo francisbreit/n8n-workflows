@@ -1,726 +1,729 @@
 [
     {
       "integration": "APITemplate.io",
-      "category": "Creative Design Automation"
+      "category": "Automação de design criativo"
     },
     {
       "integration": "AWS Transcribe",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "AWSComprehend",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "AWSLambda",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "AWSRekognition",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "AWSS3",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "AWSSES",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "AWSSNS",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "AWSSQS",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "ActiveCampaign",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Affinity",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Agent",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Airtable",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Asana",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Automizy",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Autopilot",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Bannerbear",
-      "category": "Creative Design Automation"
+      "category": "Automação de design criativo"
     },
     {
       "integration": "BasicLLMChain",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Beeminder",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Bitly",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Box",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "Brandfetch",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "ChargeBee",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "CircleCI",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Clearbit",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "ClickUp",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Clockify",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Cockpit",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Coda",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "CoinGecko",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Contentful-delivery-api",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Contentful-preview-api",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "ConvertKit",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Copper",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Cortex",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "CrateDB",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Customerio",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Date&Time",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Deepl",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Demio",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Discord",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Discourse",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Disqus",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Drif",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "DropBox",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "E-goi",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "EditImage",
-      "category": "Creative Design Automation"
+      "category": "Automação de design criativo"
     },
     {
       "integration": "Emelia",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "ExecuteWorkflow",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "FTP",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Flow",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "FreshDesk",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "FunctionItem",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "GetResponse",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Ghost",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Git",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "GitLab",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Github",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Gmail",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "GoogleBooks",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "GoogleCalendar",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "GoogleCloudFirestore",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "GoogleContacts",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "GoogleDrive",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "GoogleSheets",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "GoogleSlides",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "GoogleTask",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Gotify",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "HTML Extract",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "HTTP",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "Hackernews",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "Harvest",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "HelpScout",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Hubspot",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Hunter",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "InMemoryVectorStore",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Intercom",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "InvoiceNinja",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Iterable",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Keap",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Kitemaker",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Lemlist",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Line",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "LingvaNex",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Linkedin",
-      "category": "Social Media Management"
+      "category": "Gerenciamento de Midias Sociais"
     },
     {
       "integration": "MQTT",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "MailCheck",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Mailchimp",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Mailerlite",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Mailjet",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Mandrill",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Matrix",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Mattermost",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Mautic",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Medium",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "MessageBird",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Microsoft OneDrive",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "MicrosoftExcel",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "MicrosoftOutlook",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "MicrosoftSQL",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Mindee",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Mocean",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Monday",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "MongoDB",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Move Binary Data",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "MySQL",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "NASA",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "Nested sub-node errors",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "NextCloud",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "OpenThesaurus",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "OpenWeatherMap",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "Orbit",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Paddle",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "PagerDuty",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Paypal",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Peekalink",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "PhantomBuster",
-      "category": "Web Scraping & Data Extraction"
+      "category": "Web Scraping e extração de dados"
     },
     {
       "integration": "PineconeVectorStore",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Pipedrive",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "PostHog",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Postgres",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "ProfitWell",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Pushbullet",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Pushover",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "QdrantVectorStore",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "QuestDB",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "QuickBase",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "QuickBooks",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Rabbitmq",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Raindrop",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Reddit",
-      "category": "Social Media Management"
+      "category": "Gerenciamento de Midias Sociais"
     },
     {
       "integration": "Redis",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "RocketChat",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Rundeck",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "S3",
-      "category": "Cloud Storage & File Management"
+      "category": "Armazenamento em nuvem e gerenciamento de arquivos"
     },
     {
       "integration": "SIGNL4",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Salesforce",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Salesmate",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Segment",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "SendGrid",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "SentryIo",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Shopify",
-      "category": "E-commerce & Retail"
+      "category": "E-commerce e varejo"
     },
     {
       "integration": "Slack",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Spontit",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Spotify",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Stackby",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Storyblok",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Strapi",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Strava",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Sub-node errors",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "SummarizationChain",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     },
     {
       "integration": "Taiga",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Tapfiliate",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Telegram",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "TheHive[v3]",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "TheHive[v4]",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "TimescaleDB",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Todoist",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "TravisCI",
-      "category": "Technical Infrastructure & DevOps"
+      "category": "Infraestrutura técnica e DevOps"
     },
     {
       "integration": "Trello",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Twilio",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Twist",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Twitter",
-      "category": "Social Media Management"
+      "category": "Gerenciamento de Midias Sociais"
     },
     {
       "integration": "UnleashedSoftware",
-      "category": "Business Process Automation"
+      "category": "Automação de processos de negócios"
     },
     {
       "integration": "Uplead",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Vero",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Vonage",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Webflow",
-      "category": "Creative Design Automation"
+      "category": "Automação de design criativo"
     },
     {
       "integration": "Wekan",
-      "category": "Project Management"
+      "category": "Gerenciamento de projetos"
     },
     {
       "integration": "Wise",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Wordpress",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "XML",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "Xero",
-      "category": "Financial & Accounting"
+      "category": "Financeiro e Contábil"
     },
     {
       "integration": "Yourls",
-      "category": "Marketing & Advertising Automation"
+      "category": "Automação de marketing e publicidade"
     },
     {
       "integration": "Youtube",
-      "category": "Creative Content & Video Automation"
+      "category": "Conteúdo criativo e automação de vídeo"
     },
     {
       "integration": "Zendesk",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "ZohoCRM",
-      "category": "CRM & Sales"
+      "category": "CRM e Vendas"
     },
     {
       "integration": "Zoom",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "Zulip",
-      "category": "Communication & Messaging"
+      "category": "Comunicação e mensagens"
     },
     {
       "integration": "uProc",
-      "category": "Data Processing & Analysis"
+      "category": "Processamento e análise de dados"
     },
     {
       "integration": "vectorStorePGVector",
-      "category": "AI Agent Development"
+      "category": "Desenvolvimento de agentes de IA"
     }
 ]
+
+
+
