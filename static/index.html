@@ -1344,7 +1344,7 @@
           try {
             this.elements.jsonViewer.textContent = 'Carregando...';
             this.elements.jsonSection.classList.remove('hidden');
-            this.elements.viewJsonBtn.textContent = '📄 Ver JSON';
+            this.elements.viewJsonBtn.textContent = '📄 Ocultar JSON';
 
             const data = await this.apiCall(`/workflows/${this.currentWorkflow.filename}`);
             const jsonString = JSON.stringify(data.raw_json, null, 2);
