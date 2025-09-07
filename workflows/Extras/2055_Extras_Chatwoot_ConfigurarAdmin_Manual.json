@@ -1,5 +1,5 @@
 {
-  "name": "2055_Extras_Chatwoot_ConfigurarAdmin_Manual.json",
+  "name": "Workflow Manual que prepara o Chatwoot para o Modo SAAS",
   "nodes": [
     {
       "parameters": {
