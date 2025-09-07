@@ -1,6 +1,6 @@
 {
   "id": 86,
-  "name": "Check for valid Mautic contact email",
+  "name": "Verifique o e-mail de contato válido no Mautic",
   "nodes": [
     {
       "name": "If is not new contact",
