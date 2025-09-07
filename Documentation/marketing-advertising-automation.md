@@ -144,7 +144,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Mautic Mondaycom Create Triggered
 **Filename:** `0275_Mautic_Mondaycom_Create_Triggered.json`  
-**Description:** Webhook-triggered automation that connects Monday.com and Mautic to create new records. Uses 3 nodes.  
+**Description:** Automação acionada por webhook que conecta Monday.com e Mautic para criar novos registros. Utiliza 3 nodes.  
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** low (3 nodes)  
@@ -154,7 +154,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Calendly Mautic Create Triggered
 **Filename:** `0277_Calendly_Mautic_Create_Triggered.json`  
-**Description:** Webhook-triggered automation that connects Calendly and Mautic to create new records. Uses 3 nodes.  
+**Description:** Automação acionada por webhook que conecta Calendly e Mautic para criar novos registros. Utiliza 3 nodes
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** low (3 nodes)  
@@ -464,7 +464,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Unsubscribe Mautic contacts from automated unsubscribe emails
 **Filename:** `0490_Mautic_Gmail_Send_Triggered.json`  
-**Description:** Webhook-triggered automation that orchestrates Server-Sent Events, Gmail, and Mautic for data processing. Uses 16 nodes.  
+**Description:** Automação acionada por webhook que orquestra eventos enviados pelo servidor, Gmail e Mautic para processamento de dados. Utiliza 16 nodes.  
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** high (16 nodes)  
@@ -934,7 +934,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Mautic Webhook Update Webhook
 **Filename:** `0963_Mautic_Webhook_Update_Webhook.json`  
-**Description:** Webhook-triggered automation that connects Webhook and Mautic to update existing data. Uses 17 nodes.  
+**Description:** Automação acionada por webhook que conecta o Webhook e o Mautic para atualizar dados existentes. Utiliza 17 nodes.
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** high (17 nodes)  
@@ -1004,7 +1004,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Manual Mautic Automate Triggered
 **Filename:** `1017_Manual_Mautic_Automate_Triggered.json`  
-**Description:** Manual workflow that integrates with Mautic for data processing. Uses 2 nodes.  
+**Description:** Fluxo de trabalho manual que se integra ao Mautic para processamento de dados. Utiliza 2 nodes. 
 **Status:** Inactive  
 **Trigger:** Manual  
 **Complexity:** low (2 nodes)  
@@ -1044,7 +1044,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Mautic Googlesheets Automate Scheduled
 **Filename:** `1083_Mautic_GoogleSheets_Automate_Scheduled.json`  
-**Description:** Scheduled automation that connects Google Sheets and Mautic for data processing. Uses 4 nodes.  
+**Description:** Automação programada que conecta o Planilhas Google e o Mautic para processamento de dados. Utiliza 4 nodes.  
 **Status:** Inactive  
 **Trigger:** Scheduled  
 **Complexity:** low (4 nodes)  
@@ -1074,7 +1074,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### New WooCommerce Customer to Mautic
 **Filename:** `1160_Mautic_Woocommerce_Create_Triggered.json`  
-**Description:** Webhook-triggered automation that connects Mautic and Woocommerce for data processing. Uses 5 nodes.  
+**Description:** Automação acionada por webhook que conecta Mautic e Woocommerce para processamento de dados. Utiliza 5 nodes. 
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** low (5 nodes)  
@@ -1084,7 +1084,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Check for valid Mautic contact email
 **Filename:** `1168_Mautic_Slack_Send_Triggered.json`  
-**Description:** Webhook-triggered automation that orchestrates Onesimpleapi, Slack, and Mautic for data processing. Uses 6 nodes and integrates with 4 services.  
+**Description:** Automação acionada por webhook que orquestra Onesimpleapi, Slack e Mautic para processamento de dados. Utiliza 6 nós e integra-se com 4 serviços. 
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** medium (6 nodes)  
@@ -1304,7 +1304,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Shopify + Mautic
 **Filename:** `1526_Mautic_Webhook_Automation_Webhook.json`  
-**Description:** Complex multi-step automation that orchestrates Shopify, Crypto, and GraphQL for data processing. Uses 26 nodes and integrates with 5 services.  
+**Description:** Automação complexa em várias etapas que orquestra Shopify, Crypto e GraphQL para processamento de dados. Utiliza 26 nós e integra-se a 5 serviços.  
 **Status:** Active  
 **Trigger:** Complex  
 **Complexity:** high (26 nodes)  
@@ -1404,7 +1404,7 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ### Wordpress Form to Mautic
 **Filename:** `1892_Noop_Mautic_Automation_Webhook.json`  
-**Description:** Webhook-triggered automation that connects Mautic and Form Trigger for data processing. Uses 10 nodes.  
+**Description:** Automação acionada por webhook que conecta o Mautic e o Form Trigger para processamento de dados. Utiliza 10 nós. 
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** medium (10 nodes)  
