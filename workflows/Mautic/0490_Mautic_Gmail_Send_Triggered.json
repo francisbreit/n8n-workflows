@@ -2,7 +2,7 @@
   "meta": {
     "instanceId": "f0efd559def66ddc761033b0b2eb86ed3edec31121f2c1aa92ed05e63303529a"
   },
-  "name": "Unsubscribe Mautic contacts from automated unsubscribe emails",
+  "name": "Cancelar a inscrição de contatos do Mautic em e-mails de cancelamento de inscrição automatizados",
   "tags": [],
   "nodes": [
     {
