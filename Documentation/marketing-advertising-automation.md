@@ -102,9 +102,9 @@ This document catalogs the **Marketing & Advertising Automation** workflows from
 
 ---
 
-### Receive updates when a form is submitted in Mautic, and send a confirmation SMS
+### Receba atualizações quando um formulário for enviado no Mautic e envie um SMS de confirmação
 **Filename:** `0155_Mautic_Twilio_Update_Triggered.json`  
-**Description:** Webhook-triggered automation that connects Twilio and Mautic to update existing data. Uses 2 nodes.  
+**Description:** Automação acionada por webhook que conecta Twilio e Mautic para atualizar dados existentes. Utiliza 2 nodes.
 **Status:** Inactive  
 **Trigger:** Webhook  
 **Complexity:** low (2 nodes)  
