@@ -1,6 +1,6 @@
 {
   "id": 83,
-  "name": "New WooCommerce Customer to Mautic",
+  "name": "Novo cliente WooCommerce para o Mautic",
   "nodes": [
     {
       "name": "Check for Existing",
