@@ -1,6 +1,6 @@
 {
   "id": "13",
-  "name": "Receive updates when a form is submitted in Mautic, and send a confirmation SMS",
+  "name": "Receba atualizações quando um formulário for enviado no Mautic e envie um SMS de confirmação",
   "nodes": [
     {
       "name": "Mautic Trigger",
