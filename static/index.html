@@ -1325,7 +1325,7 @@
 
         // Reset button states
         this.elements.viewJsonBtn.textContent = '📄 Ver JSON';
-        this.elements.viewDiagramBtn.textContent = '📊 Ver Diagram';
+        this.elements.viewDiagramBtn.textContent = '📊 Ver Diagrama';
 
         // Reset copy button states
         this.resetCopyButton('copyJsonBtn');
@@ -1364,12 +1364,12 @@
 
         if (isVisible) {
           this.elements.diagramSection.classList.add('hidden');
-          this.elements.viewDiagramBtn.textContent = '📊 View Diagram';
+          this.elements.viewDiagramBtn.textContent = '📊 Ver Diagrama';
         } else {
           try {
             this.elements.diagramViewer.textContent = 'Loading diagram...';
             this.elements.diagramSection.classList.remove('hidden');
-            this.elements.viewDiagramBtn.textContent = '📊 Hide Diagram';
+            this.elements.viewDiagramBtn.textContent = '📊 Ocultar Diagrama';
 
             const data = await this.apiCall(`/workflows/${this.currentWorkflow.filename}/diagram`);
             this.currentDiagramData = data.diagram;
