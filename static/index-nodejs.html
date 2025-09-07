@@ -1217,9 +1217,9 @@
         let text = `${count.toLocaleString()} workflows`;
         
         if (query && category !== 'all') {
-          text += ` found for "${query}" in "${category}"`;
+          text += ` encontrado(s) para "${query}" in "${category}"`;
         } else if (query) {
-          text += ` found for "${query}"`;
+          text += ` encontrado(s) para "${query}"`;
         } else if (category !== 'all') {
           text += ` in "${category}"`;
         }
@@ -1324,8 +1324,8 @@
         this.currentDiagramData = null;
 
         // Reset button states
-        this.elements.viewJsonBtn.textContent = '📄 View JSON';
-        this.elements.viewDiagramBtn.textContent = '📊 View Diagram';
+        this.elements.viewJsonBtn.textContent = '📄 Ver JSON';
+        this.elements.viewDiagramBtn.textContent = '📊 Ver Diagrama';
 
         // Reset copy button states
         this.resetCopyButton('copyJsonBtn');
@@ -1339,12 +1339,12 @@
 
         if (isVisible) {
           this.elements.jsonSection.classList.add('hidden');
-          this.elements.viewJsonBtn.textContent = '📄 View JSON';
+          this.elements.viewJsonBtn.textContent = '📄 Ver JSON';
         } else {
           try {
             this.elements.jsonViewer.textContent = 'Loading...';
             this.elements.jsonSection.classList.remove('hidden');
-            this.elements.viewJsonBtn.textContent = '📄 Hide JSON';
+            this.elements.viewJsonBtn.textContent = '📄 Ocultar JSON';
 
             const data = await this.apiCall(`/workflows/${this.currentWorkflow.filename}`);
             const jsonString = JSON.stringify(data.raw_json, null, 2);
@@ -1364,12 +1364,12 @@
 
         if (isVisible) {
           this.elements.diagramSection.classList.add('hidden');
-          this.elements.viewDiagramBtn.textContent = '📊 View Diagram';
+          this.elements.viewDiagramBtn.textContent = '📊 Ver Diagrama';
         } else {
           try {
             this.elements.diagramViewer.textContent = 'Loading diagram...';
             this.elements.diagramSection.classList.remove('hidden');
-            this.elements.viewDiagramBtn.textContent = '📊 Hide Diagram';
+            this.elements.viewDiagramBtn.textContent = '📊 Ocultar Diagrama';
 
             const data = await this.apiCall(`/workflows/${this.currentWorkflow.filename}/diagram`);
             this.currentDiagramData = data.diagram;
@@ -1475,7 +1475,7 @@
         if (!button) return;
 
         const originalText = button.innerHTML;
-        button.innerHTML = '✅ Copied!';
+        button.innerHTML = '✅ Copiado!';
         button.classList.add('copied');
 
         setTimeout(() => {
@@ -1488,7 +1488,7 @@
         const button = document.getElementById(buttonId);
         if (!button) return;
 
-        button.innerHTML = '📋 Copy';
+        button.innerHTML = '📋 Copiar';
         button.classList.remove('copied');
       }
     }
