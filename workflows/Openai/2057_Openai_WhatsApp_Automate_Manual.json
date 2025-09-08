@@ -1,0 +1,692 @@
+{
+  "name": "WhatsApp/Chatbot RAG completo para WhatsApp com tecnologia de IA usando OpenAI e Qdrant",
+  "nodes": [
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query['hub.challenge'] }}",
+        "options": {}
+      },
+      "id": "f1ec3161-926a-42f9-a419-b28958f2f4a1",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [
+        -112,
+        1152
+      ],
+      "typeVersion": 1.1
+    },
+    {
+      "parameters": {
+        "agent": "conversationalAgent",
+        "promptType": "define",
+        "text": "={{ $('Respond').item.json.body.entry[0].changes[0].value.messages[0].text.body }}",
+        "options": {
+          "systemMessage": "Você é um assistente com tecnologia de IA para uma loja de eletrônicos. Seu principal objetivo é auxiliar os clientes, fornecendo informações precisas e úteis sobre os produtos, dicas de solução de problemas e suporte geral. Utilize a base de conhecimento fornecida (documentos recuperados) para responder a perguntas com precisão e profissionalismo.\n\n**Diretrizes**:\n1. **Informações do Produto**:\n- Forneça descrições detalhadas dos produtos, incluindo especificações, recursos e compatibilidade.\n- Destaque os principais pontos de venda e as diferenças entre produtos similares.\n- Mencione a disponibilidade, os preços e as promoções, se aplicável.\n\n2. **Suporte Técnico**:\n- Ofereça guias passo a passo para solução de problemas comuns.\n- Sugira soluções para problemas de configuração, instalação ou configuração.\n- Se o problema for complexo, recomende entrar em contato com a equipe de suporte da loja para obter mais assistência.\n\n3. **Atendimento ao Cliente**:\n- Responda educadamente e profissionalmente a todas as perguntas.\n- Se uma pergunta não estiver clara, peça esclarecimentos para fornecer a melhor resposta possível.\n\n- Para dúvidas relacionadas ao pedido (por exemplo, status, devoluções ou cancelamentos), oriente os clientes sobre como proceder usando os sistemas da loja.\n\n4. **Uso da Base de Conhecimento**:\n- Sempre consulte a base de conhecimento fornecida (documentos recuperados) para garantir a precisão.\n- Caso a base de conhecimento não contenha informações relevantes, informe o cliente e sugira recursos ou ações alternativas.\n\n5. **Tom e Estilo**:\n- Use um tom amigável, acessível e profissional.\n- Evite jargões técnicos, a menos que o cliente demonstre familiaridade com o assunto.\n- Mantenha as respostas concisas, mas informativas.\n\n**Exemplos de Interações**:\n1. **Consulta sobre o Produto**:\n- Cliente: \"Qual é a diferença entre o Smartwatch XYZ e o Smartwatch ABC?\"\n\n- IA: \"O Smartwatch XYZ possui bateria com maior duração (até 7 dias) e GPS integrado, enquanto o Smartwatch ABC possui uma tela AMOLED mais brilhante e suporta carregamento sem fio. Ambos são compatíveis com dispositivos iOS e Android. Gostaria de mais detalhes sobre cada um dos produtos?\"\n\n2. **Suporte Técnico**:\n- Cliente: \"Meu roteador sem fio não está se conectando à internet.\"\n- IA: \"Tente os seguintes passos: 1) Reinicie o roteador e o modem. 2) Certifique-se de que todos os cabos estejam conectados corretamente. 3) Verifique se os indicadores LED do roteador mostram uma conexão estável. Se o problema persistir, pode ser necessário redefinir o roteador para as configurações de fábrica. Gostaria de um guia detalhado para redefinir o roteador?\"\n\n3. **Atendimento ao Cliente**:\n- Cliente: \"Como faço para devolver um produto com defeito?\"\n\n- AI: \"Para devolver um produto com defeito, acesse nosso Portal de Devoluções em nosso site e insira o número do seu pedido. Você receberá uma etiqueta de devolução e instruções. Se precisar de mais assistência, nossa equipe de suporte está disponível em support@electronicsstore.com.\"\n\n**Limitações**:\n- Se a dúvida estiver fora do escopo da base de conhecimento ou exigir intervenção humana, informe o cliente e forneça os dados de contato do departamento apropriado.\n- Não forneça informações especulativas ou não verificadas. Confie sempre na base de conhecimento ou direcione o cliente para recursos oficiais."
+        }
+      },
+      "id": "2cb0aed0-1add-46ec-b1ff-78a6ef82bb88",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        432,
+        1488
+      ],
+      "typeVersion": 1.7
+    },
+    {
+      "parameters": {
+        "content": "# PASSO 4\n\n## Sistema RAG\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n* *Respond* O webhook recebe várias solicitações POST do Meta referentes a mensagens do WhatsApp (mensagens do usuário + notificações de status)\n* Verificar se o JSON recebido contém mensagens do usuário\n* Retorno da mensagem de texto ao usuário. Esta é uma mensagem personalizada, não uma mensagem de modelo do WhatsApp Business",
+        "height": 517,
+        "width": 459
+      },
+      "id": "098d4e46-067f-4326-8ed9-2a094e73d7a3",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -400,
+        1360
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "id": "e0a45336-aa3c-4ebe-aa7c-945d60ac24da",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "position": [
+        432,
+        1680
+      ],
+      "typeVersion": 1.2,
+      "credentials": {
+        "openAiApi": {
+          "id": "HUEkdgzCvrQZtP30",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "47aede35-d23f-47c3-bb03-f871281559c2",
+      "name": "When clicking ‘Test workflow’",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        -672,
+        208
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "qdrantCollection": {
+          "__rl": true,
+          "mode": "id",
+          "value": "=COLLECTION"
+        },
+        "options": {}
+      },
+      "id": "608c9a10-b797-470c-b33f-5ff596e4e256",
+      "name": "Qdrant Vector Store",
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "position": [
+        304,
+        320
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://QDRANTURL/collections/COLLECTION",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n \"filter\": {}\n}",
+        "options": {}
+      },
+      "id": "5a7a0fc3-ed03-4086-b329-4e8f7b1711bb",
+      "name": "Create collection",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -384,
+        64
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://QDRANTURL/collections/COLLECTION/points/delete",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n \"filter\": {}\n}",
+        "options": {}
+      },
+      "id": "c8b0b896-266e-4e6c-a83b-851ac6490e9e",
+      "name": "Refresh collection",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -384,
+        320
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "filter": {
+          "driveId": {
+            "__rl": true,
+            "mode": "list",
+            "value": "My Drive",
+            "cachedResultUrl": "https://drive.google.com/drive/my-drive",
+            "cachedResultName": "My Drive"
+          },
+          "folderId": {
+            "__rl": true,
+            "mode": "id",
+            "value": "=test-whatsapp"
+          }
+        },
+        "options": {}
+      },
+      "id": "1a818e00-205b-4eba-8bf3-1997f732e641",
+      "name": "Get folder",
+      "type": "n8n-nodes-base.googleDrive",
+      "position": [
+        -160,
+        320
+      ],
+      "typeVersion": 3
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.id }}"
+        },
+        "options": {
+          "googleFileConversion": {
+            "conversion": {
+              "docsToFormat": "text/plain"
+            }
+          }
+        }
+      },
+      "id": "b739b8b1-2580-4f16-81c2-1306e95069cb",
+      "name": "Download Files",
+      "type": "n8n-nodes-base.googleDrive",
+      "position": [
+        64,
+        320
+      ],
+      "typeVersion": 3
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "6752e7ae-9fda-457b-bcda-b75592e879b5",
+      "name": "Embeddings OpenAI",
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "position": [
+        288,
+        528
+      ],
+      "typeVersion": 1.1,
+      "credentials": {
+        "openAiApi": {
+          "id": "HUEkdgzCvrQZtP30",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "dataType": "binary",
+        "options": {}
+      },
+      "id": "764ce604-b80f-4b7b-992f-52f4c8e001bc",
+      "name": "Default Data Loader",
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "position": [
+        464,
+        528
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "chunkSize": 300,
+        "chunkOverlap": 30
+      },
+      "id": "8cb59d27-4b7b-4f97-a0c0-a6862e9f8318",
+      "name": "Token Splitter",
+      "type": "@n8n/n8n-nodes-langchain.textSplitterTokenSplitter",
+      "position": [
+        432,
+        688
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "## Importante!\n### Configure os nós do webhook desta forma:\n* Certifique-se de que *Verify* e *Respond* tenham a mesma URL.\n* *Verify* deve ter o método HTTP GET.\n* *Respond* deve ter o método HTTP POST.",
+        "height": 177,
+        "width": 405,
+        "color": 3
+      },
+      "id": "e61c50cf-6686-4bd6-a4ba-7ce91bb9f6ea",
+      "name": "Sticky Note2",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -944,
+        1248
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "# PASSO 3\n\n## Criar Webhook\n* Acesse a página do seu [Aplicativo Meta para Desenvolvedores](https://developers.facebook.com/apps/), navegue até as configurações do aplicativo\n* Adicione uma **URL de webhook de produção** como uma nova URL de retorno\n* *Verifique* se o webhook recebe uma solicitação GET e envia um código de verificação\n* Depois disso, você pode excluir este",
+        "height": 408,
+        "width": 618,
+        "color": 5
+      },
+      "id": "fe1c96d2-8ca1-4c74-aea1-be0ae12bcb64",
+      "name": "Sticky Note1",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -400,
+        896
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "path": "f0d2e6f6-8fda-424d-b377-0bd191343c20",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "04bb0c9c-6483-4c48-9417-fb5d35faa4db",
+      "name": "Verify",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        -352,
+        1152
+      ],
+      "webhookId": "f0d2e6f6-8fda-424d-b377-0bd191343c20",
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "f0d2e6f6-8fda-424d-b377-0bd191343c20",
+        "options": {}
+      },
+      "id": "7e152171-7e0e-4521-832a-d8bfb29e6271",
+      "name": "Respond",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        -384,
+        1520
+      ],
+      "webhookId": "f0d2e6f6-8fda-424d-b377-0bd191343c20",
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "version": 2,
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "loose"
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "959fbffc-876a-4235-87be-2dedba4926cd",
+              "operator": {
+                "type": "object",
+                "operation": "exists",
+                "singleValue": true
+              },
+              "leftValue": "={{ $json.body.entry[0].changes[0].value.messages[0] }}",
+              "rightValue": ""
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "id": "5c316048-c7e1-408d-814f-1872ff00c9e6",
+      "name": "is Message?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        -160,
+        1520
+      ],
+      "typeVersion": 2.2
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "470271332838881",
+        "recipientPhoneNumber": "={{ $('Respond').item.json.body.entry[0].changes[0].value.contacts[0].wa_id }}",
+        "textBody": "=You can only send text messages",
+        "additionalFields": {}
+      },
+      "id": "fbd24fdc-9c83-44dc-972d-27776576d333",
+      "name": "Only message",
+      "type": "n8n-nodes-base.whatsApp",
+      "position": [
+        144,
+        1632
+      ],
+      "typeVersion": 1,
+      "webhookId": "02ba92de-a736-45aa-aaac-c52948a30e3a"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "470271332838881",
+        "recipientPhoneNumber": "={{ $('Respond').item.json.body.entry[0].changes[0].value.contacts[0].wa_id }}",
+        "textBody": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "id": "52959a04-8a11-457c-b1e2-97c513968cb6",
+      "name": "Send",
+      "type": "n8n-nodes-base.whatsApp",
+      "position": [
+        848,
+        1488
+      ],
+      "typeVersion": 1,
+      "webhookId": "441acc4a-6086-4d29-a28f-bf16f5528465"
+    },
+    {
+      "parameters": {},
+      "id": "c0eb400b-3f43-45c4-bb37-7ba060e4682e",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "position": [
+        544,
+        1712
+      ],
+      "typeVersion": 1.3
+    },
+    {
+      "parameters": {
+        "content": "# PASSO 1\n\n## Criar Coleção Qdrant\nAlterar:\n- QDRANTURL\n- COLLECTION",
+        "height": 220,
+        "width": 880,
+        "color": 6
+      },
+      "id": "a1c069ca-a16c-48f4-b049-95a283c3bfbd",
+      "name": "Sticky Note3",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -176,
+        0
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "# PASSO 2\n\n\n\n\n\n\n\n\n\n\n\n\n## Vetorização de documentos com Qdrant e Google Drive\nAlterar:\n- QDRANTURL\n- COLLECTION",
+        "height": 400,
+        "width": 620,
+        "color": 4
+      },
+      "id": "8c8be0f4-9c7f-49a6-891d-72f2fa1491cd",
+      "name": "Sticky Note4",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -400,
+        272
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "content": "## Configurar Agente de IA\nDefina o prompt do sistema e o modelo de bate-papo. Se desejar, você pode definir quaisquer ferramentas",
+        "height": 292,
+        "width": 380
+      },
+      "id": "e8c5b9b9-38c8-460c-8cc6-b7da94a9fcb8",
+      "name": "Sticky Note5",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        384,
+        1328
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "qdrantCollection": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "typeVersion": 1.3,
+      "position": [
+        720,
+        1696
+      ],
+      "id": "013fdd45-c987-4adf-8291-aac6e7fc248f",
+      "name": "Qdrant Vector Store1",
+      "credentials": {
+        "qdrantApi": {
+          "id": "lO97yoB8Hqs2tdRp",
+          "name": "QdrantApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        720,
+        1856
+      ],
+      "id": "9a8fdc9d-0690-4fb6-b1a1-6780ccbef1ce",
+      "name": "Embeddings OpenAI1",
+      "credentials": {
+        "openAiApi": {
+          "id": "HUEkdgzCvrQZtP30",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Verify": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond": {
+      "main": [
+        [
+          {
+            "node": "is Message?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get folder": {
+      "main": [
+        [
+          {
+            "node": "Download Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "is Message?": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Only message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Files": {
+      "main": [
+        [
+          {
+            "node": "Qdrant Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Token Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Qdrant Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Refresh collection": {
+      "main": [
+        [
+          {
+            "node": "Get folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Qdrant Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Create collection",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Refresh collection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Qdrant Vector Store1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Qdrant Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2fe57044-584c-444c-b644-67ec568d0be7",
+  "meta": {
+    "instanceId": "918a48e9397e4da4e8c1485e45ef0f41c6daa8f4286e58a520b2ff2d07366bfa"
+  },
+  "id": "izG8ZDtG391GFbqm",
+  "tags": []
+}
