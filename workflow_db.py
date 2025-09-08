@@ -390,21 +390,21 @@ class WorkflowDatabase:
         
         # Start with trigger description
         trigger_descriptions = {
-            'Webhook': "Webhook-triggered automation that",
-            'Scheduled': "Scheduled automation that", 
-            'Complex': "Complex multi-step automation that",
+            'Webhook': "Webhook-triggered automação que",
+            'Scheduled': "Scheduled automação que", 
+            'Complex': "Automação complexa de várias etapas que",
         }
-        desc = trigger_descriptions.get(trigger_type, "Manual workflow that")
+        desc = trigger_descriptions.get(trigger_type, "Workflow Manual que")
         
         # Add functionality based on name and integrations
         if integrations:
             main_services = list(integrations)[:3]
             if len(main_services) == 1:
-                desc += f" integrates with {main_services[0]}"
+                desc += f" integra com {main_services[0]}"
             elif len(main_services) == 2:
-                desc += f" connects {main_services[0]} and {main_services[1]}"
+                desc += f" conecta {main_services[0]} e {main_services[1]}"
             else:
-                desc += f" orchestrates {', '.join(main_services[:-1])}, and {main_services[-1]}"
+                desc += f" orquestra {', '.join(main_services[:-1])}, e {main_services[-1]}"
         
         # Add workflow purpose hints from name
         name_lower = name.lower()
@@ -423,9 +423,9 @@ class WorkflowDatabase:
         else:
             desc += " para processamento de dados"
         
-        desc += f". Uses {node_count} nodes"
+        desc += f". Usa {node_count} nodes"
         if len(integrations) > 3:
-            desc += f" and integrates with {len(integrations)} services"
+            desc += f" e integra com {len(integrations)} serviços"
         
         return desc + "."
     
