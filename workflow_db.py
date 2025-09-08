@@ -409,19 +409,19 @@ class WorkflowDatabase:
         # Add workflow purpose hints from name
         name_lower = name.lower()
         if 'create' in name_lower:
-            desc += " to create new records"
+            desc += " para criar novos registros"
         elif 'update' in name_lower:
-            desc += " to update existing data"
+            desc += " para atualizar dados existentes"
         elif 'sync' in name_lower:
-            desc += " to synchronize data"
+            desc += " para sincronizar dados"
         elif 'notification' in name_lower or 'alert' in name_lower:
-            desc += " for notifications and alerts"
+            desc += " para notificações e alertas"
         elif 'backup' in name_lower:
-            desc += " for data backup operations"
+            desc += " para operações de backup de dados"
         elif 'monitor' in name_lower:
-            desc += " for monitoring and reporting"
+            desc += " para monitoramento e relatórios"
         else:
-            desc += " for data processing"
+            desc += " para processamento de dados"
         
         desc += f". Uses {node_count} nodes"
         if len(integrations) > 3:
